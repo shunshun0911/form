@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="form-header">
+    <h1 class="title-header">Thesis Database</h1>
+  </div>
+  <div class="formform">
+  <form action="connect.php" method="post" id="registration" class="form"> 
+      <div class="f1">
+        <h2>Thesis Members Information</h2>
+        <label>Title</label>
+        <input type="text" id="title" name="title" placeholder="Title">
+        
+        <label>Author 1</label> 
+        <input type="text" id="a1lastname" name="a1lastname" placeholder="Last Name">
+        <input type="text" id="a1firstname" name="a1firstname" placeholder="First Name">
+        <input type="text" id="a1middlename" name="a1middlename" placeholder="Middle Name">
+        
+    
+        <label>Author 2</label> 
+        <input type="text" id="a2lastname" name="a2lastname" placeholder="Last Name">
+        <input type="text" id="a2firstname" name="a2firstname" placeholder="First Name">
+        <input type="text" id="a2middlename" name="a2middlename" placeholder="Middle Name">
+    
+        
+    
+        <label>Author 3</label> 
+        <input type="text" id="a3lastname" name="a3lastname" placeholder="Last Name">
+        <input type="text" id="a3firstname" name="a3firstname" placeholder="First Name">
+        <input type="text" id="a3middlename" name="a3middlename" placeholder="Middle Name">
+    
+        <label>Adviser</label> 
+        <input type="text" id="adviserlastname" name="adviserlastname" placeholder="Last Name">
+        <input type="text" id="adviserfirstname" name="adviserfirstname" placeholder="First Name">
+        <input type="text" id="advisermiddlename" name="advisermiddlename" placeholder="Middle Name">
+    
+        <label>Co-Adviser</label> 
+        <input type="text" id="co-adviserlastname" name="co-adviserlastname" placeholder="Last Name">
+        <input type="text" id="co-adviserfirstname" name="co-adviserfirstname" placeholder="First Name">
+        <input type="text" id="co-advisermiddlename" name="co-advisermiddlename" placeholder="Middle Name">
+        </div>
+
+    <div class="f2">
+      <h2>Thesis Submission Details</h2>
+      <div class="year-submission-wrapper">
+        <div class="school-year">
+            <label>School Year</label>
+            <input type="text" id="schoolyear" name="schoolyear" placeholder="2024-2025">
+        </div>
+        <div class="submission-date">
+            <label>Date of Submission</label>
+            <input type="date" id="dos" name="dos" min="1900-01-01" max="2100-01-01">
+        </div>
+    </div>
+    
+      <label>Subject of Study</label>
+      <select name="course" id="course">
+        <option value="CPE">Computer Engineering</option>
+        <option value="ECE">Electronics Engineering</option>
+      </select>
+      <div class="program">
+        <label>Program</label>
+        <select name="course" id="prog">
+          <option value="CPE">Computer Engineering</option>
+          <option value="ECE">Electronics Engineering</option>
+        </select>
+  
+        <label>Co-Program</label>
+        <select name="course" id="co-prog">
+          <option value="CPE">Computer Engineering</option>
+          <option value="ECE">Electronics Engineering</option>
+        </select>   
+      </div>
+      <h3>Contact Information</h3>
+      <div class="contact-info">
+        <div class="email-info">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="lasalle@dlsud.edu.ph">
+        </div>
+        <div class="phone-info">
+            <label for="contact">Phone No.</label>
+            <input type="tel" id="contact" name="contact" placeholder="09012345678">
+        </div>
+    </div>
+      <div class="submit-button">
+        <button type="submit" class="button">Submit</button>
+      </div>
+    </div>
+  </form>
+  </div>
+</body>
+</html>

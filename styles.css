@@ -1,0 +1,238 @@
+body {
+  background-color: #F5F5F5;
+}
+
+.formform {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F5F5F5;
+  position: relative; 
+  top: 60px; 
+}
+
+.form {
+  margin: 0 35px;
+  width: 100%;
+  max-width: 1200px;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+
+
+.f1 {
+  flex: 1; 
+  background-color: white;
+  height: 100%;
+  padding: 20px 40px;
+  border-radius: 10px 0 0 10px; 
+  color: #438669;
+}
+
+.f2 {
+  flex: 1;
+  background-color: #248527;
+  height: 100%;
+  padding: 20px 40px;
+  border-radius: 0 10px 10px 0;
+  color: #F2F2F2;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+#title {
+  display: block;
+  margin-bottom: 30px;
+}
+
+label, h3 {
+  font-family: Arial, sans-serif;
+  font-weight: 500;
+  display: block;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif; 
+  font-size: 19px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+input {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  margin: 0 10px 30px 0;
+  padding: 11.5px 15px;
+  height: 30px;
+  width: 130px;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #CCCCCC;
+}
+
+.f1 input[type="text"]:focus {
+  outline: none;
+  border-bottom: 2px solid #248527; 
+}
+
+.year-submission-wrapper {
+  display: flex;
+}
+
+.school-year {
+  flex: 1;
+}
+
+.submission-date {
+  flex: 1;
+  color: #F2F2F2;
+}
+
+.f2 input {
+  color: #F2F2F2;
+}
+
+.f2 label {
+  margin-bottom: 10px;
+}
+
+.f2 input::placeholder {
+  color: #F2F2F2;
+}
+
+.f2 input:focus {
+  outline: none;
+  border-bottom: 2px solid #FFFFFF; 
+}
+
+#dos {
+  color: #F2F2F2;
+}
+
+.f2 select {
+  background: transparent;
+  color: #F2F2F2; 
+  border: none;
+  padding: 11.5px 15px;
+  font-family: 'Montserrat', sans-serif; 
+  font-size: 16px; 
+  cursor: pointer; 
+  outline: none;
+  border-bottom: 2px solid #CCCCCC;
+  margin-bottom: 30px;
+}
+
+.f2 input[type="tel"],
+.f2 input[type="email"] {
+  width: 200px;
+}
+
+.contact-info {
+  display: flex;
+}
+
+.email-info, .phone-info {
+  flex: 1;
+}
+
+.submit-button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.submit-button button {
+  margin-top: 5px;
+  margin-right: 50px;
+  background-color: #f6edd9;
+  color: #248527;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px; 
+  font-size: 16px;
+}
+
+.submit-button button:hover {
+  background-color: #d3ad7c;
+  color: #000000;
+}
+
+.form-header {
+  text-align: center;
+  background-color: transparent;
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100px;
+  z-index: 10;
+}
+
+.title-header {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+  color: #438669;
+  margin: 20px;
+  padding: 0;
+}
+
+
+@media (max-width: 1250px) {
+  .form {
+    flex-direction: column; 
+    height: 100%;
+  }
+
+  .f1, .f2 {
+    width: 100%; 
+    padding: 20px; 
+  }
+}
+
+@media (max-width: 800px) {
+  .title-header {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  input, select {
+    width: 80%;
+  }
+
+  .submit-button {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 550px) {
+  .form {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .f1, .f2 {
+    border-radius: 0;
+  }
+
+  .submit-button button {
+    width: 100%;
+    margin: 10px 0;
+  }
+  #email, #contact {
+    width: 70%;
+  }
+}
